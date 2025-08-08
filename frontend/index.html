@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INDEX</title>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <!-- Agregar producto -->
+    <div class="card shadow">
+      <div class="card-body">
+        <h2 class="card-title mb-4">Añadir producto</h2>
+        <form class="row g-3" id="form-crear-producto">
+
+          <!-- Nombre -->
+          <div class="col-md-6">
+            <label for="crear-producto-nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="crear-producto-nombre" placeholder="Nombre del producto">
+          </div>
+
+          <!-- Precio -->
+          <div class="col-md-6">
+            <label for="crear-producto-precio" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="crear-producto-precio" placeholder="Precio">
+          </div>
+
+          <!-- Botón -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Guardar Producto</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Agregar producto -->
+
+
+    <h3 class="mt-3">Productos:</h3>
+
+    <ul id="lista-productos" class="list-group">
+
+    </ul>
+
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
